@@ -74,6 +74,8 @@ UPDATE_PACKAGE "luci-app-partexp" "sirpdboy/luci-app-partexp" "main"  #分区助
 UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main" 
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 UPDATE_PACKAGE "openlist2" "sbwml/luci-app-openlist2" "main"    #alist的新替换openlist
+rm -rf feeds/packages/lang/golang
+UPDATE_PACKAGE "packages_lang_golang" "sbwml/packages_lang_golang" "24.x" 
 UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"  #qbittorrent下载
 
 UPDATE_PACKAGE "luci-app-authshield" "iv7777/luci-app-authshield" "main"  #防止异常登录保护

@@ -115,12 +115,12 @@ CONFIG_PACKAGE_dosfstools=y
 CONFIG_PACKAGE_kmod-fs-exfat=y
 CONFIG_PACKAGE_exfat-mkfs=y
 
-# --- [可选] eMMC 工具 (如果是 eMMC 存储机型建议保留) ---
+# --- eMMC 工具  ---
 CONFIG_PACKAGE_mmc-utils=y
 
-# --- [删除] 除非你有 M.2 接口，否则删除 ---
-# CONFIG_PACKAGE_kmod-nvme is not set
-# CONFIG_PACKAGE_pciutils is not set
+# ---  M.2 接口支持 ---
+CONFIG_PACKAGE_pciutils=y
+CONFIG_PACKAGE_kmod-nvme=y
 
 # --- [删除] 除非你插手机/4G卡/外接网卡，否则删除 ---
 # CONFIG_PACKAGE_kmod-usb-net-rndis is not set

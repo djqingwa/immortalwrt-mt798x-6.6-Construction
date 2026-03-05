@@ -204,3 +204,13 @@ CONFIG_PACKAGE_kmod-xdp-sockets-diag=y
 # ksmbd
 CONFIG_PACKAGE_kmod-fs-ksmbd=y
 
+#支持USB
+# 新增USB网卡/存储相关内核模块
+CONFIG_PACKAGE_kmod-mii=y
+CONFIG_PACKAGE_kmod-usb-net=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+CONFIG_PACKAGE_kmod-usb-net-rndis=y
+CONFIG_PACKAGE_kmod-scsi-core=y
+CONFIG_PACKAGE_kmod-usb-storage=y
+# 可选：如果需要UAS协议支持，补充这行
+# CONFIG_PACKAGE_kmod-usb-storage-uas=y
